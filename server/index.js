@@ -2,12 +2,16 @@ import express from 'express'
 import nodemailer from 'nodemailer'
 import dotenv from 'dotenv'
 import process from 'node:process'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 dotenv.config()
 
 const app = express()
 
 app.use(express.json())
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 
 const transporter = nodemailer.createTransport({
@@ -462,10 +466,26 @@ app.post('/api/send-enquiry', async (req, res) => {
     })
   }
 })
+const distPath = path.join(__dirname, '../dist')
 
+app.use(express.static(distPath))
 
-const PORT = process.env.PORT || 5000
+app.use((req, res, next) => {
+  if (req.path.startsWith('/api/')) {
+    return next()
+  }
 
-app.listen(PORT, () => {
+  if (req.method === 'GET') {
+    return res.sendFile(
+      path.join(distPath, 'index.html')
+    )
+  }
+
+  next()
+})
+
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Truelip server running on port ${PORT}`)
 })
