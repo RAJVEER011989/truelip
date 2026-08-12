@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "server": "node server/index.js",
-  "start": "npm run build && node server/index.js",
-  "preview": "vite preview"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "server": "node server/index.js",
+    "start": "node server/index.js",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
