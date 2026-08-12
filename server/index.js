@@ -467,5 +467,5 @@ app.post('/api/send-enquiry', async (req, res) => {
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, () => {
-  console.log(`Backend running on http://localhost:${PORT}`)
+  console.log(`Truelip server running on port ${PORT}`)
 })
