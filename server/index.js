@@ -169,7 +169,7 @@ app.use((req, res, next) => {
   next()
 })
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
 
 // FIXED SYNTAX: Removed the trailing empty parentheses ()
 app.listen(PORT, '0.0.0.0', () => {
