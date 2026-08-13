@@ -14,7 +14,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const transporter = nodemailer.createTransport({
-  host: '://hostinger.com',
+  host: 'smtp.hostinger.com',
   port: 465,
   secure: true,
   auth: {
