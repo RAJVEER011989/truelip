@@ -149,7 +149,6 @@ export default function AboutPage() {
                 key={capability.title}
               >
 
-                <div className="cap-no">•</div>
 
                 <h3>{capability.title}</h3>
 
