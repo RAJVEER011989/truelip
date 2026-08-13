@@ -55,9 +55,17 @@ export default function ContactPage() {
         service: '',
         message: '',
       })
+      setTimeout(() => {
+  setStatus('')
+}, 4000)
     } catch (error) {
       console.error('Form submission error:', error)
       setStatus('error')
+      setStatus('error')
+
+setTimeout(() => {
+  setStatus('')
+}, 4000)
     } finally {
       setSending(false)
     }
@@ -270,34 +278,72 @@ export default function ContactPage() {
             onSubmit={handleSubmit}
           >
              {status === 'success' && (
-              <div
-                style={{
-                  marginTop: '18px',
-                  padding: '13px 16px',
-                  background: '#edf8f1',
-                  color: '#237a47',
-                  fontSize: '14px',
-                  lineHeight: 1.5,
-                }}
-              >
-                Thank you. Your enquiry has been sent successfully.
-              </div>
-            )}
+  <div
+    style={{
+  position: 'fixed',
+  top: '92px',
+  left: '50%',
+  transform: 'translateX(-50%)',
+
+  zIndex: 9999,
+
+  width: 'calc(100% - 32px)',
+  maxWidth: '520px',
+
+  padding: '16px 20px',
+
+  background: '#edf8f1',
+  color: '#237a47',
+
+  border: '1px solid #cfe9d8',
+  borderRadius: '10px',
+
+  boxShadow: '0 12px 35px rgba(0,0,0,.14)',
+
+  fontSize: '14px',
+  lineHeight: 1.5,
+  textAlign: 'center',
+
+  animation: 'toastFade 4s ease forwards',
+}}
+  >
+    Thank you. Your enquiry has been sent successfully.
+  </div>
+)}
 
             {status === 'error' && (
-              <div
-                style={{
-                  marginTop: '18px',
-                  padding: '13px 16px',
-                  background: '#fff0f0',
-                  color: '#bb3636',
-                  fontSize: '14px',
-                  lineHeight: 1.5,
-                }}
-              >
-                Unable to send your enquiry. Please try again.
-              </div>
-            )}
+  <div
+    style={{
+  position: 'fixed',
+  top: '92px',
+  left: '50%',
+  transform: 'translateX(-50%)',
+
+  zIndex: 9999,
+
+  width: 'calc(100% - 32px)',
+  maxWidth: '520px',
+
+  padding: '16px 20px',
+
+  background: '#ddf0cb',
+  color: '#f82121',
+
+  border: '1px solid #eb2a2a',
+  borderRadius: '10px',
+
+  boxShadow: '0 12px 35px rgba(0,0,0,.14)',
+
+  fontSize: '14px',
+  lineHeight: 1.5,
+  textAlign: 'center',
+
+  animation: 'toastFade 4s ease forwards',
+}}
+  >
+    Unable to send your enquiry. Please try again.
+  </div>
+)}
             <h3>Request a free assessment</h3>
 
             <div className="form-row">
