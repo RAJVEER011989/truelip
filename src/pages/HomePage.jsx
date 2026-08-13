@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom'
 import PageShell from '../components/PageShell'
 import heroImg from '../assets/images/hero-smart-building.webp'
+import { FiArrowUpRight } from 'react-icons/fi'
 
 const metrics = [
   { value: '10+', label: 'Years of excellence' },
   { value: '200+', label: 'Projects delivered' },
   { value: '50+', label: 'Prestigious clients' },
   { value: 'PAN', label: 'India coverage' },
+
 ]
 
 const exploreLinks = [
@@ -163,7 +165,9 @@ export default function HomePage() {
 
           <p>{item.description}</p>
 
-          <b className="industry-arrow">↗</b>
+          <span className="industry-arrow">
+  <FiArrowUpRight />
+</span>
         </Link>
       ))}
     </div>

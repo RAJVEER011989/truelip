@@ -194,7 +194,6 @@ export default function IndustriesPage() {
               <div className="industry-row" key={industry.title}>
                 <h3>{industry.title}</h3>
                 <p>{industry.subtitle}</p>
-                <b className="industry-arrow">↗</b>
               </div>
             ))}
           </div>
