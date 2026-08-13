@@ -45,10 +45,10 @@ export default function AboutPage() {
           Same full-screen visual language as Software
          ========================================================= */}
 
-      <section className="hero about-hero" id="about-hero">
+      <section className="about-hero" id="about-hero">
 
   {/* LEFT CONTENT */}
-  <div className="hero-copy">
+  <div className="about-hero-copy">
 
     <h1>
       Built on expertise <br />
@@ -56,7 +56,7 @@ export default function AboutPage() {
       Driven by outcomes 
     </h1>
 
-    <p className="hero-sub">
+    <p className="about-hero-sub">
       Truelip Technocrates brings software engineering, intelligent automation
       and connected infrastructure together under one accountable technology
       partner. From digital platforms and industrial systems to smart
@@ -69,7 +69,7 @@ export default function AboutPage() {
 
 
   {/* RIGHT IMAGE */}
-  <div className="hero-media">
+  <div className="about-hero-media">
 
     <img
       src={aboutImg}
