@@ -4,11 +4,12 @@ import logo from '../assets/images/truelip-logo.jpg'
 import { FaWhatsapp } from 'react-icons/fa'
 
 const navItems = [
-  { to: '/about', label: 'About' },
-  { to: '/solutions', label: 'Solutions' },
-  { to: '/industrial-automation', label: 'Industrial automation' },
+  { to: '/home', label: 'Home' },
   { to: '/software-development', label: 'Software' },
+  { to: '/industrial-automation', label: 'Industrial automation' },
   { to: '/industries', label: 'Sectors We Serve' },
+  { to: '/about', label: 'About' },
+  { to: '/solutions', label: 'Solutions' },  
 ]
 
 export default function PageShell({ children }) {
@@ -76,6 +77,7 @@ export default function PageShell({ children }) {
               </span>
             </Link>
             <nav className="footer-nav">
+              <NavLink to="/home">Home</NavLink>
               <NavLink to="/about">About</NavLink>
               <NavLink to="/solutions">Solutions</NavLink>
               <NavLink to="/industrial-automation">Industrial automation</NavLink>

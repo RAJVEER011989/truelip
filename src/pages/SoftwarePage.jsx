@@ -111,7 +111,7 @@ export default function SoftwarePage() {
       color: '#15171c',
     }}
   >
-    Software built to evolve.
+    Software built to evolve
   </h2>
 
   <p
@@ -134,7 +134,6 @@ export default function SoftwarePage() {
           <div className="capability-grid">
             {capabilities.map((capability) => (
               <article className="capability" key={capability.title}>
-                <div className="cap-no">•</div>
                 <h3>{capability.title}</h3>
                 <p>{capability.text}</p>
                 <div className="tag-row dark-tags">

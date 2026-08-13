@@ -943,6 +943,17 @@ textarea {
   border-bottom: 1px solid #cfd1d4;
   transition: padding 0.25s;
 }
+.industry-arrow {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  color: #15171c;
+  transition: transform 0.25s ease;
+}
+
+.industry-row:hover .industry-arrow {
+  transform: translate(4px, -4px);
+}
 
 .industry-row:hover {
   padding-left: 12px;
@@ -2766,6 +2777,10 @@ textarea {
   }
 }
 @media (max-width: 720px) {
+
+  .industry-arrow {
+    font-size: 20px;
+  }
 
   .contact-full-hero {
     display: flex !important;

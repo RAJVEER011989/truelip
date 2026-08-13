@@ -62,7 +62,7 @@ export default function HomePage() {
           </p>
           <div className="actions">
             <Link className="btn btn-primary" to="/contact">
-              Request a free quote <span>↗</span>
+              Request a free quote
             </Link>
             <Link className="btn btn-ghost" to="/solutions">
               Explore services
@@ -148,83 +148,22 @@ export default function HomePage() {
         EXPLORE LINKS
        ========================================================= */}
 
-    <div
-      style={{
-        width: '100%',
-        borderTop: '1px solid #c9cbcf',
-      }}
-    >
+    <div className="industry-list">
       {exploreLinks.map((item) => (
         <Link
           key={item.title}
           to={item.to}
+          className="industry-row"
           style={{
-            display: 'grid',
-            gridTemplateColumns: '38% 56% 6%',
-            alignItems: 'center',
-
-            width: '100%',
-            minHeight: '110px',
-
-            padding: '20px 22px',
-
-            borderBottom: '1px solid #c9cbcf',
-
-            color: '#15171c',
             textDecoration: 'none',
-
-            boxSizing: 'border-box',
+            color: 'inherit',
           }}
         >
-          {/* TITLE */}
-          <h3
-            style={{
-              margin: 0,
+          <h3>{item.title}</h3>
 
-              fontFamily: 'Manrope, Inter, Arial, sans-serif',
-              fontSize: 'clamp(24px, 2.2vw, 34px)',
-              fontWeight: 500,
+          <p>{item.description}</p>
 
-              lineHeight: 1.08,
-              letterSpacing: '-0.04em',
-
-              color: '#15171c',
-            }}
-          >
-            {item.title}
-          </h3>
-
-
-          {/* DESCRIPTION */}
-          <p
-            style={{
-              maxWidth: '650px',
-
-              margin: 0,
-
-              color: '#656a72',
-
-              fontSize: '14px',
-              lineHeight: 1.65,
-            }}
-          >
-            {item.description}
-          </p>
-
-
-          {/* ARROW */}
-          <span
-            style={{
-              justifySelf: 'end',
-
-              color: '#15171c',
-
-              fontSize: '18px',
-              fontWeight: 400,
-            }}
-          >
-            ↗
-          </span>
+          <b className="industry-arrow">↗</b>
         </Link>
       ))}
     </div>
@@ -241,7 +180,7 @@ export default function HomePage() {
             </p>
           </div>
           <Link className="text-link" to="/contact">
-            Start a conversation ↗
+            Start a conversation
           </Link>
         </div>
       </section>
