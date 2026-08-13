@@ -260,7 +260,7 @@ export default function ContactPage() {
               target="_blank"
               rel="noreferrer"
             >
-              Chat on WhatsApp ↗
+              Chat on WhatsApp
             </a>
           </div>
 
