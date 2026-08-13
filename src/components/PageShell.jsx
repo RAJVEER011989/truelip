@@ -7,7 +7,7 @@ const navItems = [
   { to: '/home', label: 'Home' },
   { to: '/software-development', label: 'Software' },
   { to: '/industrial-automation', label: 'Industrial automation' },
-  { to: '/industries', label: 'Sectors We Serve' },
+  { to: '/sectorsweserve', label: 'Sectors We Serve' },
   { to: '/about', label: 'About' },
   { to: '/solutions', label: 'Solutions' },  
 ]
@@ -82,8 +82,7 @@ export default function PageShell({ children }) {
               <NavLink to="/solutions">Solutions</NavLink>
               <NavLink to="/industrial-automation">Industrial automation</NavLink>
               <NavLink to="/software-development">Software</NavLink>
-              <NavLink to="/industries">Industries</NavLink>
-              <NavLink to="/team">Team</NavLink>
+              <NavLink to="/sectorsweserve">Sectors We Serve</NavLink>
               <NavLink to="/contact">Contact</NavLink>
             </nav>
           </div>

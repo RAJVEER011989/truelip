@@ -83,7 +83,7 @@ function App() {
       <Route path="/solutions" element={<SolutionsPage />} />
       <Route path="/industrial-automation" element={<IndustrialPage />} />
       <Route path="/software-development" element={<SoftwarePage />} />
-      <Route path="/industries" element={<IndustriesPage />} />
+      <Route path="/sectorsweserve" element={<IndustriesPage />} />
       <Route path="/contact" element={<ContactPage />} />
     </Routes>
   )
