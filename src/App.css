@@ -2986,5 +2986,322 @@ select {
     transform: translate(-50%, -8px);
   }
 }
+/* =========================================================
+   INDUSTRIAL OPERATIONS LAYOUT
+   ========================================================= */
+
+.industrial-layout {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 52% 48%;
+
+  align-items: start;
+
+  gap: 0;
+
+  position: relative;
+
+  background: #07080a;
+}
+
+.industrial-sticky-image {
+  position: sticky;
+
+  top: 81px;
+
+  width: 100%;
+  height: calc(100vh - 81px);
+
+  align-self: start;
+
+  overflow: hidden;
+
+  background: #07080a;
+
+  z-index: 1;
+}
+
+.industry-copy {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  min-width: 0;
+
+  padding: 80px 70px 80px 55px;
+
+  box-sizing: border-box;
+
+  background: #07080a;
+}
+
+.industrial-tags {
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  gap: 7px;
+
+  margin-top: 30px;
+
+  width: 100%;
+}
+
+.industrial-tags span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 38px;
+
+  padding: 8px 11px;
+
+  border: 1px solid rgba(255,255,255,.16);
+
+  background: rgba(255,255,255,.045);
+
+  color: #f0f1f3;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}@media (max-width: 720px) {
+
+  /* =========================================================
+     INDUSTRIAL HERO
+     ========================================================= */
+
+  .industrial-hero {
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    padding-top: 71px !important;
+
+    overflow: hidden !important;
+  }
+
+  .industrial-hero-media {
+    order: 1 !important;
+
+    position: relative !important;
+
+    width: 100% !important;
+
+    height: 360px !important;
+    min-height: 360px !important;
+
+    flex: none !important;
+  }
+
+  .industrial-hero-copy {
+    order: 2 !important;
+
+    width: 100% !important;
+
+    min-height: 0 !important;
+
+    padding: 42px 22px 48px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .industrial-hero-copy h1 {
+    max-width: 100% !important;
+
+    font-size: 38px !important;
+    line-height: 1.05 !important;
+
+    letter-spacing: -0.03em !important;
+  }
+
+  .industrial-hero-copy p {
+    max-width: 100% !important;
+
+    margin-top: 24px !important;
+
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+  .industrial-hero-label {
+    right: 20px !important;
+    bottom: 20px !important;
+
+    width: min(245px, 72%) !important;
+
+    font-size: 9px !important;
+  }
+
+
+  /* =========================================================
+     OPERATIONS SECTION
+     ========================================================= */
+
+  #industrial {
+    width: 100% !important;
+
+    background: #07080a !important;
+
+    overflow: hidden !important;
+  }
+
+  .industrial-layout {
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    background: #07080a !important;
+  }
+
+
+  /* SECOND IMAGE */
+  .industrial-sticky-image {
+    position: relative !important;
+
+    top: auto !important;
+
+    width: 100% !important;
+
+    height: 360px !important;
+    min-height: 360px !important;
+
+    flex: none !important;
+
+    align-self: auto !important;
+
+    overflow: hidden !important;
+  }
+
+  .industrial-sticky-image img {
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+
+  /* CONTENT BELOW IMAGE */
+  .industry-copy {
+    position: relative !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    padding: 48px 22px 60px !important;
+
+    box-sizing: border-box !important;
+
+    background: #07080a !important;
+  }
+
+  .industry-copy .display {
+    margin: 0 !important;
+
+    max-width: 100% !important;
+
+    font-size: 40px !important;
+    line-height: 1.03 !important;
+
+    letter-spacing: -0.04em !important;
+  }
+
+  .industry-copy .lead {
+    max-width: 100% !important;
+
+    margin-top: 24px !important;
+
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+
+  /* FEATURES */
+  .feature-row {
+    width: 100% !important;
+
+    padding: 26px 0 !important;
+  }
+
+  .feature-row h3 {
+    font-size: 21px !important;
+    line-height: 1.15 !important;
+  }
+
+  .feature-row p {
+    max-width: 100% !important;
+
+    margin-top: 8px !important;
+
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+
+  /* NOTE */
+  .industry-note {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+
+  /* TAGS */
+  .industrial-tags {
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    width: 100% !important;
+
+    gap: 8px !important;
+
+    margin-top: 28px !important;
+  }
+
+  .industrial-tags span {
+    min-height: 34px !important;
+
+    padding: 7px 10px !important;
+
+    font-size: 10px !important;
+
+    white-space: nowrap !important;
+  }
+
+
+  /* BUTTON */
+  #industrial .actions {
+    width: 100% !important;
+
+    margin-top: 32px !important;
+  }
+
+  #industrial .actions .btn {
+    width: 100% !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+  }
+}
 
 
