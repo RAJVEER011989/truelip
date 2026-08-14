@@ -302,7 +302,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(70px, 9vh, 120px) var(--pad) 70px;
+  padding: clamp(10px, 5vh, 50px) var(--pad) 150px;
 }
 
 .eyebrow {
@@ -342,7 +342,7 @@ textarea {
 }
 
 .hero-sub {
-  max-width: 670px;
+  max-width: 500px;
   margin: 34px 0;
   color: #bdc0c7;
   font-size: clamp(16px, 1.25vw, 20px);
@@ -352,7 +352,7 @@ textarea {
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 15px;
 }
 
 .btn {
@@ -360,7 +360,7 @@ textarea {
   align-items: center;
   justify-content: center;
   min-height: 52px;
-  padding: 0 24px;
+  padding: 0 30px;
   gap: 18px;
   font-size: 14px;
   font-weight: 600;

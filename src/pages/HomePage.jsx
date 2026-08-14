@@ -37,7 +37,7 @@ const exploreLinks = [
     title: 'Sectors We Serve',
     description:
       'Purpose-built technology for manufacturing, education, real estate, hospitality, healthcare, government and growing enterprises.',
-    to: '/industries',
+    to: '/sectorsweserve',
   },
 
    {
@@ -56,17 +56,17 @@ export default function HomePage() {
         <div className="hero-copy">
           <div className="eyebrow">Software Engineering & Automation Experts · Headquartered in Bhilai</div>
           <h1>
-            Smarter spaces.<br />
-            <em>Smarter business.</em>
+            TRUELIP<br />
+            <em>TECHNOCRATES </em>
           </h1>
           <p className="hero-sub">
-            From intelligent buildings and industrial plant automation to custom business software — Truelip Technocrates delivers end-to-end technology solutions across India. Hardware. Software. Integrated.
+            From the factory floor to the boardroom, we connect machines, software, buildings and business systems into one intelligent technology ecosystem — giving organisations better control, better insight and better performance.
           </p>
           <div className="actions">
             <Link className="btn btn-primary" to="/contact">
               Request a free quote
             </Link>
-            <Link className="btn btn-ghost" to="/solutions">
+            <Link className="btn btn-primary" to="/solutions">
               Explore services
             </Link>
           </div>
